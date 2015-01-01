@@ -14,6 +14,15 @@ public class Health : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		transform.Rotate (0, rate, 0);
-		guiText.text = health.ToString();	
+		guiText.text = health.ToString();
+		
+		
+            if (Input.GetKey("up"))
+              print("up arrow key is held down");
+        
+            if (Input.GetKey("down"))
+              print("down arrow key is held down");
+            
+            
 	}
 }
